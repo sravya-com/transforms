@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+          ;
+          }
+.transforms{
+    width: 400px;
+    height:350px;
+    border: 5px solid;
+    text-align: center;
+    background-color:aqua;
+    box-shadow: 20px 20px 20px 10px;
+    }
+    button{
+      background-color: rgb(185, 122, 183);
+       color:white ; 
+       height: 60px;
+       width:80px;
+       margin:5px;
+       box-shadow:5px 5px 5px 5px whitesmoke;
+       border-radius: 40px;
+    
+}
+.star{
+    width: 200px;
+    position:relative;
+    top:40px;
+    border-radius: 40px;
+    
+
+}
+.transforms > .translate:hover ~ img{
+            transform:translate(100px);
+            transition: all 4s ease-in-out;}
+  .transforms >.Rotate:hover ~ img{
+    transform: rotate(5000deg);
+    transition: all 8s ease-in-out;
+  } 
+  .transforms >.scale:hover ~ img{
+    transform: scale(2);
+    transition:all 4s ease-in-out ;
+  } 
+   .transforms > .Skew:hover ~ img{  
+    transform:skewy(400deg);
+     transition-duration: 10s; 
+     transition:all 2s  ; 
+}
+a{
+  border:2px solid;
+  width:150px;
+  height:60px;
+  text-align: center;
+  border-color: black;
+  background-color: rgb(53, 211, 239);
+} 
+
+
+</style>
+</head>
+<body>
+  
+    <div class="transforms">
+        <button class="translate">Translate</button>
+        <button class="Rotate">Rotate</button>
+        <button class="scale">Scale</button>
+        <button class="Skew">skew</button>
+        <img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-117760.jpg"class="star">
+
+</div>
+</body>
+</html>
